@@ -1,14 +1,16 @@
-import React from 'react';
-import { linkTo } from '@storybook/addon-links';
-import { Welcome } from '@storybook/react/demo';
+import React from "react";
 
 export default {
-  title: 'Welcome',
-  component: Welcome,
+  title: "Introduction|Welcome",
 };
 
-export const ToStorybook = () => <Welcome showApp={linkTo('Button')} />;
-
-ToStorybook.story = {
-  name: 'to Storybook',
-};
+export const toAutoEscolaNardini = () => (
+  <div>
+    <h1>Auto Escola Nardini</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati
+      distinctio ab magni fugit dolor, esse minus voluptate repudiandae! Itaque
+      sunt totam soluta iure libero quia fugiat fugit ratione aperiam!
+    </p>
+  </div>
+);
