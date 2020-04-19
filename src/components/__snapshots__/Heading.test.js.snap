@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`match snapshot 1`] = `
+<DocumentFragment>
+  .c0 h1,
+.c0 h2,
+.c0 h3,
+.c0 h4,
+.c0 h5,
+.c0 h6 {
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.c0 h1::after,
+.c0 h2::after,
+.c0 h3::after,
+.c0 h4::after,
+.c0 h5::after,
+.c0 h6::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background-color: #ffc107;
+  height: 5px;
+  width: 70px;
+}
+
+.c0 h1 {
+  padding-bottom: 25px;
+}
+
+<div
+    class="c0"
+  >
+    Title
+  </div>
+</DocumentFragment>
+`;
