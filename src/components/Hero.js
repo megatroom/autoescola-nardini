@@ -4,8 +4,6 @@ import styled, { css } from "styled-components";
 
 import { breakAt, BreakpointSizes } from "styles/Breakpoints";
 
-const colorYellow = "#ffc107";
-
 const Root = styled.div`
   color: #fff;
   padding: 100px 0;
@@ -33,7 +31,7 @@ const Content = styled.div`
   li {
     &::before {
       content: "\\2713\\0020";
-      color: ${colorYellow};
+      color: ${(props) => props.theme.colors.primary.main};
     }
   }
 `;

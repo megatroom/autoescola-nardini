@@ -17,7 +17,7 @@ const Heading = styled.div`
       position: absolute;
       left: 0;
       bottom: -3px;
-      background-color: #ffc107;
+      background-color: ${(props) => props.theme.colors.primary.main};
       height: 5px;
       width: 70px;
     }
