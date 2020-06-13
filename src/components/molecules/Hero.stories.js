@@ -1,14 +1,14 @@
 import React from "react";
 import { text } from "@storybook/addon-knobs";
 
+import BgHighwayImage from "stories/assets/bg-highway.jpg";
+import BgCarImage from "stories/assets/bg-car.jpg";
+import Heading from "components/atoms/Heading";
+import Button from "components/atoms/Button";
 import Hero from "./Hero";
-import BgHighwayImage from "../stories/assets/bg-highway.jpg";
-import BgCarImage from "../stories/assets/bg-car.jpg";
-import Heading from "./Heading";
-import Button from "./Button";
 
 export default {
-  title: "Components|Hero",
+  title: "Components|Molecules/Hero",
   component: Hero,
 };
 
