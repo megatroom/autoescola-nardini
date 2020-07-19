@@ -138,6 +138,12 @@ const Home = () => (
           Repellat mollitia minus, eum eos excepturi quos placeat culpa ea
           consequuntur facere vel. Consequatur, reiciendis.
         </Accordion>
+        <Accordion title="Quanto tempo é necessário para tirar a primeira habilitação?">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
+          veritatis autem reprehenderit necessitatibus laborum perspiciatis.
+          Repellat mollitia minus, eum eos excepturi quos placeat culpa ea
+          consequuntur facere vel. Consequatur, reiciendis.
+        </Accordion>
       </AccordionGroup>
     </Section>
     <Footer />
