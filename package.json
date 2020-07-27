@@ -14,6 +14,7 @@
     "@testing-library/jest-dom": "^5.9.0",
     "@testing-library/react": "^10.2.1",
     "@testing-library/user-event": "^11.2.1",
+    "chromatic": "^5.0.0",
     "jest-styled-components": "^7.0.2",
     "prettier": "^2.0.5",
     "prop-types": "^15.7.2",
@@ -31,7 +32,8 @@
     "cover": "yarn test -- --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public -o build/docs",
+    "chromatic": "chromatic --project-token=rwb4paahbdc"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -55,5 +57,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }
