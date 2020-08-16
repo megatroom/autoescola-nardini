@@ -4,7 +4,7 @@ import Button from "./Button";
 import styled from "styled-components";
 
 export default {
-  title: "Components|Atoms/Button",
+  title: "Components/Atoms/Button",
   component: Button,
 };
 

@@ -4,7 +4,7 @@ import ProductGrid from "./ProductGrid";
 import PlaceholderImage from "stories/assets/card-placeholder.jpg";
 
 export default {
-  title: "Components|Organisms/ProductGrid",
+  title: "Components/Organisms/ProductGrid",
   component: ProductGrid,
 };
 
