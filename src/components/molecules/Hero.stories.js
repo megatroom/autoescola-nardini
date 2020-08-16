@@ -8,7 +8,7 @@ import Button from "components/atoms/Button";
 import Hero from "./Hero";
 
 export default {
-  title: "Components|Molecules/Hero",
+  title: "Components/Molecules/Hero",
   component: Hero,
 };
 

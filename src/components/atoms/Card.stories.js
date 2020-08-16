@@ -8,7 +8,7 @@ import Button from "components/atoms/Button";
 import PlaceholderImage from "stories/assets/card-placeholder.jpg";
 
 export default {
-  title: "Components|Atoms/Card",
+  title: "Components/Atoms/Card",
   component: Card,
   subcomponents: { CardBody, CardMedia },
 };

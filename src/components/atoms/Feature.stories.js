@@ -5,7 +5,7 @@ import Grid from "components/atoms/Grid";
 import Feature from "./Feature";
 
 export default {
-  title: "Components|Atoms/Feature",
+  title: "Components/Atoms/Feature",
   component: Feature,
 };
 

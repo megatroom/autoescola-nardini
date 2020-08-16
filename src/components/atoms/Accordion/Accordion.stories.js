@@ -4,7 +4,7 @@ import Accordion from "./Accordion";
 import AccordionGroup from "./AccordionGroup";
 
 export default {
-  title: "Components|Atoms/Accordion",
+  title: "Components/Atoms/Accordion",
   component: Accordion,
 };
 

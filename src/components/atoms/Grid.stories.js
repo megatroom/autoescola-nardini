@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Grid from "./Grid";
 
 export default {
-  title: "Components|Atoms/Grid",
+  title: "Components/Atoms/Grid",
   component: Grid,
 };
 
