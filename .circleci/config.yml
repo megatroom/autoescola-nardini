@@ -30,4 +30,5 @@ workflows:
     jobs:
       - setup
       - lint:
-        requires: setup
+          requires:
+            - setup
