@@ -14,6 +14,6 @@ jobs:
       - run: node --version
       - run: yarn --version
 
-workflow:
+workflows:
   ci:
     - setup
