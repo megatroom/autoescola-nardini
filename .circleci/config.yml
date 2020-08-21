@@ -13,15 +13,15 @@ jobs:
       - run: node --version
       - run: yarn --version
       - node/install-packages:
-        pkg-manager: yarn
+          pkg-manager: yarn
       - persist_to_workspace:
-        root: .
+          root: .
   lint:
     docker:
       - image: circleci/node:12.18.3-browsers
     steps:
       - attach_workspace:
-        at: .
+          at: .
       - run: yarn lint
 
 workflows:
