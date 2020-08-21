@@ -16,6 +16,8 @@ jobs:
         pkg-manager: yarn
       - persist_to_workspace:
         root: .
+        paths:
+          - .
   lint:
     docker:
       - image: circleci/node:12.18.3-browsers
@@ -25,6 +27,7 @@ jobs:
       - run: yarn lint
 
 workflows:
+  version: 2
   ci:
     jobs:
       - setup
