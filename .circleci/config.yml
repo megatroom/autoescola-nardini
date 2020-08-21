@@ -12,23 +12,8 @@ jobs:
       - node/install-yarn
       - run: node --version
       - run: yarn --version
-      - node/install-packages:
-          pkg-manager: yarn
-      - persist_to_workspace:
-          root: .
-  lint:
-    docker:
-      - image: circleci/node:12.18.3-browsers
-    steps:
-      - attach_workspace:
-          at: .
-      - run: yarn lint
 
 workflows:
-  version: 2
   ci:
     jobs:
       - setup
-      - lint:
-          requires:
-            - setup

@@ -34,8 +34,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public -o build/docs",
-    "chromatic": "chromatic --project-token=rwb4paahbdc",
-    "lint": "eslint src/**/*.js"
+    "chromatic": "chromatic --project-token=rwb4paahbdc"
   },
   "eslintConfig": {
     "extends": "react-app"
