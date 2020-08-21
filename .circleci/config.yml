@@ -12,8 +12,14 @@ jobs:
       - node/install-yarn
       - run: node --version
       - run: yarn --version
+  lint:
+    steps:
+      - run: yarn lint
 
 workflows:
   ci:
     jobs:
       - setup
+      - lint:
+        requires:
+          - setup
