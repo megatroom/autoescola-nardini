@@ -19,6 +19,7 @@ jobs:
       - run: yarn cover
       - codecov/upload:
           file: coverage/*.json
+      - run: yarn chromatic --project-token=${CHROMATIC_TOKEN}
   versioning:
     docker:
       - image: circleci/node:12.18.3
