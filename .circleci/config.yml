@@ -11,16 +11,40 @@ jobs:
     steps:
       - checkout
       - node/install-yarn
-      - run: node --version
-      - run: yarn --version
+      - run:
+          name: Show Node version
+          command: |
+            node --version
+            yarn --version
       - node/install-packages:
           pkg-manager: yarn
-      - run: yarn lint
-      - run: yarn cover
+      - run:
+          name: Run lint check
+          command: yarn lint
+      - run:
+          name: Run unit tests with coverage
+          command: yarn cover
       - codecov/upload:
           file: coverage/*.json
+      - run:
+          name: Publish to Chromatic
+          command: yarn chromatic --project-token=${CHROMATIC_TOKEN}
+  versioning:
+    docker:
+      - image: circleci/node:12.18.3
+    steps:
+      - checkout
+      - run:
+          name: Check package version
+          command: node scripts/check-version megatroom autoescola-nardini
 
 workflows:
   ci:
     jobs:
       - tests
+      - versioning:
+          filters:
+            branches:
+              ignore: master
+            tags:
+              ignore: /.*/
