@@ -7,9 +7,16 @@ import Heading from "components/atoms/Heading";
 import Section from "components/molecules/Section";
 import Grid from "components/atoms/Grid";
 import Footer from "components/organisms/Footer";
+import Card, { CardMedia, CardMediaDescription } from "components/atoms/Card";
 
 import HeroImage from "assets/hero.jpg";
 import AboutImage from "draws/About";
+import InstImage1 from "assets/instructors/inst1.jpg";
+import InstImage2 from "assets/instructors/inst2.jpg";
+import InstImage3 from "assets/instructors/inst3.jpg";
+import InstImage4 from "assets/instructors/inst4.jpg";
+import InstImage5 from "assets/instructors/inst5.jpg";
+import InstImage6 from "assets/instructors/inst6.jpg";
 
 const ImageContainer = styled.div`
   svg {
@@ -19,6 +26,15 @@ const ImageContainer = styled.div`
     color: ${(props) => props.theme.colors.primary.main};
   }
 `;
+
+const instructors = [
+  { id: 1, name: "Thor", avatar: InstImage1 },
+  { id: 2, name: "Mel", avatar: InstImage2 },
+  { id: 3, name: "Bolinha", avatar: InstImage3 },
+  { id: 4, name: "Mike", avatar: InstImage4 },
+  { id: 5, name: "Emmy", avatar: InstImage5 },
+  { id: 6, name: "Bob", avatar: InstImage6 },
+];
 
 const About = () => (
   <>
@@ -97,6 +113,17 @@ const About = () => (
       <Heading>
         <h2>Conheça nossos professores</h2>
       </Heading>
+      <Grid sm={2} md={3} lg={4}>
+        {instructors.map((instructor) => (
+          <Card key={instructor.id}>
+            <CardMedia image={instructor.avatar}>
+              <CardMediaDescription>
+                <h5>{instructor.name}</h5>
+              </CardMediaDescription>
+            </CardMedia>
+          </Card>
+        ))}
+      </Grid>
     </Section>
     <Footer />
   </>
