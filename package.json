@@ -1,6 +1,6 @@
 {
   "name": "autoescola-nardini",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@storybook/addon-actions": "^6.0.10",
@@ -11,11 +11,13 @@
     "@storybook/addons": "^6.0.10",
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.10",
+    "@svgr/cli": "^5.4.0",
     "@testing-library/jest-dom": "^5.11.3",
     "@testing-library/react": "^10.4.8",
     "@testing-library/user-event": "^12.1.1",
     "babel-loader": "^8.1.0",
     "chromatic": "^5.1.0",
+    "history": "^5.0.0",
     "jest-styled-components": "^7.0.2",
     "prettier": "^2.0.5",
     "prop-types": "^15.7.2",
@@ -23,6 +25,7 @@
     "react-dom": "17.0.0-rc.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.10.0",
+    "react-router-dom": "^6.0.0-beta.0",
     "react-scripts": "3.4.3",
     "styled-components": "^5.1.1"
   },
@@ -35,7 +38,8 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public -o build/docs",
     "chromatic": "chromatic --exit-zero-on-changes",
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint src/**/*.js",
+    "svg": "svgr --icon --replace-attr-values '#ffc107=currentColor' -d src/draws/"
   },
   "eslintConfig": {
     "extends": "react-app"
