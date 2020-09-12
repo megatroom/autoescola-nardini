@@ -11,8 +11,3 @@ test("renders About page", () => {
   render(<About />);
   expect(screen.getByText("Auto Escola Nardini")).toBeInTheDocument();
 });
-
-test("scrolls to top in first render", () => {
-  render(<About />);
-  expect(window.scrollTo).toBeCalledTimes(1);
-});
