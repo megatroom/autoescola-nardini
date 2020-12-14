@@ -28,7 +28,7 @@ exports[`match snapshot 1`] = `
 <head>
   <style
     data-styled="active"
-    data-styled-version="5.1.1"
+    data-styled-version="5.2.1"
   >
     html{font-family:"Poppins",sans-serif;font-weight:300;font-size:100%;color:#212121;box-sizing:border-box;}
     *,*:before,*:after{box-sizing:inherit;}
